@@ -3,6 +3,7 @@ set -e
 
 echo $CIRCLE_BRANCH
 
+#this is a commit from different account to test circle
 if [[ $CIRCLE_BRANCH != "pull*" ]]
 then
 	git config --global user.name "betterclever"
